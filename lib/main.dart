@@ -20,7 +20,7 @@ void _setupLogging() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Provider(
+    return Provider<ApiService>(
       create: (context) => ApiService.create(),
       child: MaterialApp(
         theme: ThemeData(
